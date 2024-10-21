@@ -4,14 +4,10 @@ public class Race {
    ArrayList <Car> cars = new ArrayList<>();
    String nameLeader = " ";
    int leaderDistance = 0;
-
-
-
    public void addCar(Car car){
       cars.add(car);
       determineLeader(car);
    }
-
    private void determineLeader(Car car) {
       int distance = car.distanceIn24Hours();
       if (distance > leaderDistance) {
@@ -20,8 +16,5 @@ public class Race {
       }
    }
    public String getLeader() {
-     return nameLeader; }
-
-
-
+   return nameLeader; }
 }
