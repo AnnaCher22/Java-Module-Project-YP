@@ -15,7 +15,7 @@ public class Main {
             System.out.print("Введите скорость машины №" + successSpeed);
             if (scanner.hasNextInt()) {
                 speedCar = scanner.nextInt();
-                if (0 <= speedCar && speedCar <= 250) {
+                if (0 < speedCar && speedCar <= 250) {
                     ++successSpeed;
                     }
 
